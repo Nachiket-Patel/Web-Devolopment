@@ -1,0 +1,8 @@
+//
+one line comment
+
+/*  */ 
+multi line comments
+
+also html comments works as well
+<!-- this works fine in javascript too-->
