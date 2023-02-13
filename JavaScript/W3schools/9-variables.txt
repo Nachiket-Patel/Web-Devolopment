@@ -1,0 +1,23 @@
+variables in JavaScript can define 4 ways
+
+1: using var
+2: using let
+3: using const
+4: using nothing
+
+var is old method 1995 to 2015.
+let and const are introduced in 2015.
+
+let: is used for values that change.
+const: is used for values that does not change.
+
+Variables in JavaScript are case-sensitive so Hello and hello are different variables.
+
+You can declare as many as variables in one line.
+
+If you put a number in quotes, the rest of the numbers will be treated as strings, and concatenated.
+let x = "5" + 5 + 2
+
+$ and _ are consider valid for variables.
+
+
