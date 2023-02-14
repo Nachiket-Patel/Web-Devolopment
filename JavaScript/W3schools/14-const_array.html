@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Const Array</title>
+</head>
+<body>
+    <h1>This is heading</h1>
+    <p>This is paragraph</p>
+    <h2>JavaScript Const</h2>
+    <p>Declaring a constant array does NOT make the elements unchangeable:</p>
+    <p id="array"></p>
+    <p>Now change cars array</p>
+    <p id="demo"></p>
+    <pre>
+
+        <p>You can change the values of array in const but you can not redeclare it again.</p>
+        <p>const cars = ["Saab", "Volvo", "BMW"];
+        cars = ["Toyota", "Volvo", "Audi"];    // ERROR
+        </p>
+    </pre>
+    <script>
+        const cars = ["Ford", "Volvo", "BMW"];
+        document.getElementById("array").innerHTML = cars;
+
+        cars[1] = "Toyota";
+        cars.push("Audi");
+        document.getElementById("demo").innerHTML = cars;
+    </script>
+</body>
+</html>
