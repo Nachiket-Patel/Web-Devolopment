@@ -49,5 +49,3 @@ If you put a number in quotes, the rest of the numbers will be treated as string
 let x = "5" + 5 + 2
 
 $ and _ are consider valid for variables.
-
-
