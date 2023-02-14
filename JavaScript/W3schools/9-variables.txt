@@ -8,8 +8,18 @@ variables in JavaScript can define 4 ways
 var is old method 1995 to 2015.
 let and const are introduced in 2015.
 
-let: is used for values that change, it is block variable that can only access within its block.
+
+let: is used for values that change.
+it is block variable that can only access within its block.
+Variables defined with let cannot be Redeclared.
+Variables defined with let must be Declared before use.
+
+
 const: is used for values that does not change. const is not block variable that can access out of its block.
+Variables defined with const cannot be Redeclared.
+Variables defined with const cannot be Reassigned.
+Variables defined with const have Block Scope.
+
 
 Variables in JavaScript are case-sensitive so Hello and hello are different variables.
 
