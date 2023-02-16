@@ -1,0 +1,28 @@
+JavaScript has 8 Datatypes
+1. String
+2. Number
+3. Bigint
+4. Boolean
+5. Undefined
+6. Null
+7. Symbol
+8. Object
+
+The Object Datatype
+
+The object data type can contain:
+1. An object
+2. An array
+3. A date
+
+JavaScript has dynamic types. This means that the same variable can be used to hold different data types.
+
+Numbers datatype can store integer and float both.
+
+Javascript are always one type: double (64-bit floating point).
+
+JavaScript BigInt is a new datatype (2020) that can be used to store integer values that are too big to be represented by a normal JavaScript Number.
+
+JavaScript arrays are written with square brackets,Array items are separated by commas.
+
+JavaScript objects are written with curly braces {},Object properties are written as name:value pairs, separated by commas.
