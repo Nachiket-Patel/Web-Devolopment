@@ -7,17 +7,23 @@ console.log(a);
 console.log(b);
 console.log(typeof(b));
 
+c = function(g,h){
+    return g*h;
+}
+console.log(c(5,5));
+
+
 //same variable can be use in different functions
 function multi(){
     let x = 10;
     return x*5;
 }
-c = multi();
-console.log(c);
+d = multi();
+console.log(d);
 
 function div(){
     let x = 100;
     return x/10;
 }
-d = div();
-console.log(d);
+e = div();
+console.log(e);
