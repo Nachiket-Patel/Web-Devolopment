@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="Author" content="Nachiket Patel">
+	<meta name="description" content="Contact page of LTS">
+	<link rel="icon" href="images/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+	<title>Contact Us - LTS</title>
+</head>
+
+<body>
+	<header>
+		<h1>Contact Us</h1>
+		<nav>
+			<ul>
+				<li>
+					<a href="/">Home</a>
+				</li>
+				<li>
+					<a href="/#about">About <abbr title="The Little Taco Shop">LTS</abbr> </a>
+				</li>
+				<li>
+					<a href="/#menu">Menu</a>
+				</li>
+				<li>
+					<a href="hours.html">Store hours</a>
+				</li>
+			</ul>
+		</nav>
+
+		<figure>
+			<img src="images/tacos_close_up_400x260.png" alt="tacos" title="Tacos ready to eat" width="400" height="260">
+			<figcaption>
+				Tacos
+			</figcaption>
+		</figure>
+	</header>
+
+	<hr>
+	<main>
+        <section>
+            <h2>Our contact Form</h2>
+            <form action="http://httpbin.org/get" method="get">
+                <fieldset>
+                    <legend>Send Us a Massage</legend>
+                    <p>
+                        <label for="name">Name:</label>
+                        <input type="text" name="name" id="name" placeholder="your name" required>
+                    </p>
+                    <p>
+                        <label for="email">Email:</label>
+                        <input type="email" name="email" placeholder="your email" required>
+                    </p>
+                    <p>
+                        <label for="massage">Your massage:</label>
+                        <br>
+                        <textarea name="massage" id="message" cols="50" rows="10" placeholder="type your massage here"></textarea>
+                    </p>
+                </fieldset>
+                <button type="submit">Submit</button>
+                <button type="reset">Reset</button>
+            </form>
+        </section>
+
+        <section>
+            <h2>Our location</h2>
+            <address>
+                555 Fortune hub, science city road, sola <br>
+                Ahmedabad city, GJ 999999
+                <br><br>
+                Phone: <a href="tel:+9999999999">999-999-9999</a>
+            </address>
+        </section>
+	</main>
+	<hr>
+
+	<footer>
+		<p>Copyright &copy; The Little Taco Shop</p>
+	</footer>
+
+</body>
