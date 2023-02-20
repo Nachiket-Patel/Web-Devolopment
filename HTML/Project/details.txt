@@ -1,0 +1,3 @@
+for validating html websites - https://validator.w3.org/
+for emojis - https://emojipedia.org/
+for checking forms - http://httpbin.org/get
