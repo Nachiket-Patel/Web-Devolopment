@@ -27,6 +27,13 @@ console.log(y);
 console.log(typeof(y));
 console.log(typeof(""));
 
+//value of null or value not given
+var e;
+console.log(typeof(e));
+var f = null;
+console.log(f);
+console.log(typeof(f));
+
 //arrays are written with []
 const cars = ["Toyota", "Audi", "BMW"];
 console.log(cars[1]);
