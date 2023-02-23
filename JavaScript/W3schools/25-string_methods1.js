@@ -30,7 +30,7 @@ console.log(c.replace(/GOOGLE/i, "Amazon"));
 
 //use /string/g for replace all strings not only one
 let d = "Google is leading in AI chatbots, ChatGPT-3 is created by Google.";
-console.log(d.replace(/Google/g, "Microsoft"));
+console.log(d.replace(/GOOgle/gi, "Microsoft"));//here /gi both are applied
 
 //replaceAll() method can be use for replacing all strings.
 //replaceAll() is case-sensitive
