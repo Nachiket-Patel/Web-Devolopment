@@ -22,13 +22,6 @@ fruits.forEach(element =>  {
     console.log(element);
 });
 
-//push() - adding element to array
-fruits.push("Watermelon");
-console.log(fruits);
-//pop() - to delete last element
-fruits.pop();
-console.log(fruits);
-
 
 //Array.isArray(array_name) - return true if it is array otherwise return false
 console.log(Array.isArray(fruits));
