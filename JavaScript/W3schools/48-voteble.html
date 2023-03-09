@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Voteble</title>
+    </head>
+    <body>
+        <h1>This is heading</h1>
+        <p>This is paragraph</p>
+        <h2>Find out person can vote or note</h2>
+        <p>Input your age and click button:</p>
+        <input id="age" placeholder="Enter your age" />
+        <button onclick="voteble()">Try it</button>
+        <p id="demo"></p>
+
+        <script>
+            function voteble() {
+                let age = Number(document.getElementById("age").value);
+                if (isNaN(age)) {
+                    vote = "Input is not a number";
+                } else {
+                    vote =
+                        age < 18 ? "Too young to vote" : "Old enough to vote";
+                }
+                document.getElementById("demo").innerHTML = vote;
+            }
+        </script>
+    </body>
+</html>
