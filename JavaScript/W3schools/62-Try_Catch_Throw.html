@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Try-catch-throw</title>
+</head>
+<body>
+    <h1>This is heading</h1>
+    <p>This is paragraph.</p><br/>
+    <p>Please input a number between 5 and 10:</p>
+    <input id="demo" type="text">
+    <button type="button" onclick="myFun()">Test Input</button>
+    <p id="p01"></p>
+
+    <script>
+        function myFun(){
+            document.getElementById('p01').innetHTML = "";
+            let x = document.getElementById('demo').value;
+            try{
+                if(x.trim() == "") throw "empty";
+                if(isNaN(x)) throw "not a number";
+                x = Number(x);
+                if(x<5) throw "too low";
+                if(x>10) throw "too high";
+            }
+
+            catch(error){
+                document.getElementById('p01').innerHTML = "Input is " + error;
+            }
+        }
+
+    </script>
+</body> 
+</html>
