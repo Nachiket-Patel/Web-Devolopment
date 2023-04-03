@@ -1,2 +1,5 @@
 #ignore project folder
 /project
+
+#ignore cs50W folder
+/CS50W
