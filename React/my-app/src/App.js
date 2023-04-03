@@ -6,7 +6,7 @@ class App extends Component {
   render() {
     return (
       <div>
-        <Navbar/>
+        <Navbar title="TextHelper" about="About" contact="Contact Us" />
       </div>
     );
   }
