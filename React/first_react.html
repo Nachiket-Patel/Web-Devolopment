@@ -17,7 +17,12 @@
             return <h1>Hello, World!</h1>
         }
 
-        ReactDOM.render(<Hello />, document.getElementById('mydiv'))
+        //old way to write
+        // ReactDOM.render(<Hello />, document.getElementById('mydiv'));
+
+        //new way to write
+        const root = ReactDOM.createRoot( document.getElementById('mydiv'));
+        root.render(<Hello />);
 
     </script>
 </body>
