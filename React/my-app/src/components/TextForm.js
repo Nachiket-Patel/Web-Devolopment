@@ -17,8 +17,16 @@ export default function TextForm(props){
         setText(lowerText);
     }
 
-    function handleClear(){
+    function handleClearText(){
+        console.log("clear text button was clicked");
         setText('');
+    }
+
+    function handleCopyText(){
+        console.log("copy text button was clicked");
+        const text = document.getElementById('textbox');
+        text.select();
+        navigator.clipboard.writeText(text.value);
     }
 
     function handleOnChange(event){
@@ -35,8 +43,9 @@ export default function TextForm(props){
                     <textarea className="form-control" value={text} onChange={handleOnChange} id="textbox" rows="10"></textarea>
                 </div>
                 <button className="btn btn-primary mx-1" onClick={handleUpClick}>Convert to Uppercase</button>
-                <button className="btn btn-primary mx-2" onClick={handleLoClick}>Convert to Lowercase</button>
-                <button className="btn btn-primary mx-2" onClick={handleClear}>clear</button>
+                <button className="btn btn-primary mx-1" onClick={handleLoClick}>Convert to Lowercase</button>
+                <button className="btn btn-primary mx-1" onClick={handleClearText}>Clear Text</button>
+                <button className="btn btn-primary mx-1" onClick={handleCopyText}>Copy Text</button>
             </div>
             
             <div className="container my-3">
