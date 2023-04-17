@@ -11,9 +11,11 @@ export default function App(){
   const toggleMode = () => {
     if(mode === 'light'){
       setMode('dark');
+      document.body.style.backgroundColor = '#0e0605';
     }
     else{
       setMode('light');
+      document.body.style.backgroundColor = 'white';
     }
   }
 
@@ -21,7 +23,7 @@ export default function App(){
     <div>
       <Navbar title="TextHelper" about="About" contact="Contact Us" mode={mode} toggleMode={toggleMode} />
       <div className="container my-3">
-        <TextForm heading="Enter text below for change: "/>
+        <TextForm heading="Enter text below for change: " mode={mode} />
       </div>
     </div>
   );  
