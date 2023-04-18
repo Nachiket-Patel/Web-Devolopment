@@ -2,15 +2,14 @@ import React, { useState } from 'react';
 import './App.css';
 
 
-function Square({ value, onSquareClick }){ 
-  
+function Square({ value, onSquareClick }){   
   return (
     <button className='square' onClick={onSquareClick}>{value}</button>
   );
 }
 
-function calculateWinner(squares){ 
- 
+
+function calculateWinner(squares){  
   const lines = [
     [0, 1, 2],
     [3, 4, 5],
@@ -31,8 +30,8 @@ function calculateWinner(squares){
   return null;
 }
 
-export default function Board(){
 
+function Board(){
   const [xIsNext, setXIsNext] = useState(true);
 
   const [squares, setsquares] = useState(Array(9).fill(null));
@@ -84,6 +83,20 @@ export default function Board(){
         <Square value={squares[7]} onSquareClick={() => handleClick(7)}/>
         <Square value={squares[8]} onSquareClick={() => handleClick(8)}/>
       </div>  
+    </div>
+  );
+}
+
+
+export default function Game(){
+  return(
+    <div className="board">
+      <div className="game-board">
+        <Board />
+      </div>
+      <div className="game-info">
+        <ol>{/*TODO*/}</ol>
+      </div>
     </div>
   );
 }
