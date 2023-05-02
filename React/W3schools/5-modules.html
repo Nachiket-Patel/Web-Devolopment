@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modules</title>
+</head>
+<body>
+    <h1 id="one"></h1><br/>
+    <h2 id="two"></h2><br/>
+    <h3 id="three"></h3><br/>
+    <p id="four"></p>
+    <script type="module">
+        import { name, age } from "./export.js";
+        import { fullName, codeName } from "./export.js";
+        import massage from "./export.js"
+        document.getElementById('one').innerHTML = name;
+        document.getElementById('two').innerHTML = age;
+        document.getElementById('three').innerHTML = fullName + "'s code name is " + codeName;
+        document.getElementById('four').innerHTML = massage();
+    </script>
+</body>
+</html>
