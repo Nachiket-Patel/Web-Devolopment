@@ -5,3 +5,5 @@ http.createServer(function(req, res) {
     res.write('Hello World'); //write a response to the client
     res.end() //end the response
 }).listen(8080); //the server object listen on port 8080
+
+//? Run this file and open this url for result: http://localhost:8080
