@@ -1,6 +1,6 @@
 import React from 'react';
 import { createRoot } from 'react-dom/client';
-import BookList from './App';
+import BookList from './BookList.js';
 import './index.css';
 
 

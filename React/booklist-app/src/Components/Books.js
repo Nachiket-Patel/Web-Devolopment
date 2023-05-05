@@ -1,12 +1,32 @@
 import React from 'react';
 
 
+const BookName = () => {
+    return(
+        <h1>Book Name</h1>    
+    );
+}
+
+const BookImage = () => {
+    return(
+        //Todo: add image links here. 
+        <p>here is image</p>
+        // <img src="" alt="" />
+    );
+}
+
+const Author = () => {
+    return(
+        <p>Author</p>
+    );
+}
+
 export default function Books() {
     return(
-        <section>
-            <h1>Book Name</h1>
-            <p>here image of book</p>
-            <h3>Author Name</h3>
-        </section>
+        <div>
+            <BookName />
+            <BookImage />
+            <Author />
+        </div>
     );
 }
