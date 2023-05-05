@@ -5,13 +5,13 @@ import Books from './Components/Books.js';
 
 export default function BookList() {  
   return (
-    <div>
+    <section className="booklist">
       <Books />
       <Books />
       <Books />
       <Books />
       <Books />
       <Books />
-    </div>
+    </section>
   );
 }

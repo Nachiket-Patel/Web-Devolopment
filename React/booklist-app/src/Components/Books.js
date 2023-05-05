@@ -1,29 +1,28 @@
 import React from 'react';
+import Atomic_Habits from '../images/Atomic_Habits.jpg';
 
 
 const BookName = () => {
     return(
-        <h1>Book Name</h1>    
+        <h2>Atomic Habit</h2>    
     );
 }
 
 const BookImage = () => {
     return(
-        //Todo: add image links here. 
-        <p>here is image</p>
-        // <img src="" alt="" />
+        <img src={Atomic_Habits} alt="Atomic Habit book image" />
     );
 }
 
 const Author = () => {
     return(
-        <p>Author</p>
+        <p>James Clear</p>
     );
 }
 
 export default function Books() {
     return(
-        <div>
+        <div className="book">
             <BookName />
             <BookImage />
             <Author />
