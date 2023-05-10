@@ -2,11 +2,24 @@ import React from 'react';
 import ReactDOM from 'react-dom/client';
 
 
-const Title = () => <h2>Title</h2>;
+const Title = () =>{
+    return(
+        <h2>Title</h2>
+    );
+} 
 
-const Image = () => <h1>Image</h1>;
+const Image = () => {
+    return(
+        //TODO: add image tag.
+        <h1>Image</h1>
+    );
+}
 
-const Author = () => <p>Author</p>;
+const Author = () => { 
+    return(
+        <p>Author</p>
+    );
+}
 
 
 const Books = () => {
@@ -23,7 +36,14 @@ const Books = () => {
 export default function BookList(){
 
     return(
-        <Books />
+        <section>    
+            <Books />
+            <Books />
+            <Books />
+            <Books />
+            <Books />
+            <Books />
+        </section>
     );
 
 };
