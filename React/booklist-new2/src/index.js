@@ -1,30 +1,34 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
+import './index.css';
 
+
+const title = "Atomic Habits";
+const image = "https://images-eu.ssl-images-amazon.com/images/I/91bYsX41DVL._AC_UL600_SR600,400_.jpg";
+const author = "James Clear";
 
 const Title = () =>{
     return(
-        <h2>Title</h2>
+        <h2>{title}</h2>
     );
 } 
 
 const Image = () => {
     return(
-        //TODO: add image tag.
-        <h1>Image</h1>
+        <img src={image} alt='atomic habit' />
     );
 }
 
 const Author = () => { 
     return(
-        <p>Author</p>
+        <p>{author}</p>
     );
 }
 
 
 const Books = () => {
     return(
-        <article>
+        <article className='books'>
             <Title />
             <Image />
             <Author />
@@ -36,7 +40,7 @@ const Books = () => {
 export default function BookList(){
 
     return(
-        <section>    
+        <section className='booklist'>    
             <Books />
             <Books />
             <Books />
