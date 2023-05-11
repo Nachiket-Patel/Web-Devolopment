@@ -1,30 +1,42 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.css';
+import './images/Atomic_Habits.jpg';
+import './images/Bhagwat_geeta.jpg';
+import './images/Ikigai.jpg';
+import './images/Mans_search_for_meaning.jpg';
+import './images/Rich_dad_poor_dad.jpg';
+import './images/Sapiens.jpg';
 
 
-const title = "Atomic Habits";
-const image = "https://images-eu.ssl-images-amazon.com/images/I/91bYsX41DVL._AC_UL600_SR600,400_.jpg";
-const author = "James Clear";
-
-//? That was seperate components created for organize.
-// const Title = () =>{
-//     return(
+/*
+* That was seperate components created for organize.
+const Title = () =>{
+    return(
         
-//     );
-// } 
+    );
+} 
 
-// const Image = () => {
-//     return(
+const Image = () => {
+    return(
         
-//     );
-// }
+    );
+}
 
-// const Author = () => { 
-//     return(
+const Author = () => { 
+    return(
         
-//     );
-// }
+    );
+}
+*/
+
+
+//* Adding object of books
+const firstBook = {
+    title : 'Atomic Habits',
+    img : './images/Atomic_Habits.jpg',
+    author : 'James Clear',
+};
 
 
 const Books = (props) => {
