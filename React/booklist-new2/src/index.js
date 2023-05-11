@@ -69,8 +69,7 @@ const sixthBook = {
 };
 
 
-const Books = (props) => {
-    const { title, image, author } = props;
+const Books = ({ title, image, author }) => {
     return(
         <article className='books'>
             <h2>{title}</h2>
