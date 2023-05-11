@@ -2,11 +2,11 @@ import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.css';
 import firstImg from './images/Atomic_Habits.jpg';
-import './images/Bhagwat_geeta.jpg';
-import './images/Ikigai.jpg';
-import './images/Mans_search_for_meaning.jpg';
-import './images/Rich_dad_poor_dad.jpg';
-import './images/Sapiens.jpg';
+import secondImg from './images/Bhagwat_geeta.jpg';
+import thirdImg from './images/Ikigai.jpg';
+import fourthImg from './images/Mans_search_for_meaning.jpg';
+import fifthImg from './images/Rich_dad_poor_dad.jpg';
+import sixthImg from './images/Sapiens.jpg';
 
 
 /*
@@ -38,6 +38,36 @@ const firstBook = {
     author : 'James Clear',
 };
 
+const secondBook = {
+    title : 'Bhagwat Geeta',
+    img : secondImg,
+    author : 'Ved Vyas',
+};
+
+const thirdBook = {
+    title : 'Ikigai',
+    img : thirdImg,
+    author : 'Francesc Miralles and Hector Garcia',
+};
+
+const fourthBook = {
+    title : 'Man\'s search of meaning',
+    img : fourthImg,
+    author : 'Viktor Frankl',
+};
+
+const fifthBook = {
+    title : 'Rich dad Poor dad',
+    img : fifthImg,
+    author : 'Robert Kiyosaki and Sharon Lechter',
+};
+
+const sixthBook = {
+    title : 'Sapiens',
+    img : sixthImg,
+    author : 'Yuval Noah Harari',
+};
+
 
 const Books = (props) => {
     return(
@@ -55,15 +85,16 @@ export default function BookList(){
     return(
         <section className='booklist'>    
             <Books title={firstBook.title} image={firstBook.img} author={firstBook.author} />
-            <Books title={firstBook.title} image={firstBook.img} author={firstBook.author} />
-            <Books title={firstBook.title} image={firstBook.img} author={firstBook.author} />
-            <Books title={firstBook.title} image={firstBook.img} author={firstBook.author} />
-            <Books title={firstBook.title} image={firstBook.img} author={firstBook.author} />
-            <Books title={firstBook.title} image={firstBook.img} author={firstBook.author} />
+            <Books title={secondBook.title} image={secondBook.img} author={secondBook.author} />
+            <Books title={thirdBook.title} image={thirdBook.img} author={thirdBook.author} />
+            <Books title={fourthBook.title} image={fourthBook.img} author={fourthBook.author} />
+            <Books title={fifthBook.title} image={fifthBook.img} author={fifthBook.author} />
+            <Books title={sixthBook.title} image={sixthBook.img} author={sixthBook.author} />
         </section>
     );
 
 };
+
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
