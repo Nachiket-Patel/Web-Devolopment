@@ -1,7 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.css';
-import './images/Atomic_Habits.jpg';
+import firstImg from './images/Atomic_Habits.jpg';
 import './images/Bhagwat_geeta.jpg';
 import './images/Ikigai.jpg';
 import './images/Mans_search_for_meaning.jpg';
@@ -31,10 +31,10 @@ const Author = () => {
 */
 
 
-//* Adding object of books
+//* Adding books object
 const firstBook = {
     title : 'Atomic Habits',
-    img : './images/Atomic_Habits.jpg',
+    img : firstImg,
     author : 'James Clear',
 };
 
@@ -54,12 +54,12 @@ export default function BookList(){
 
     return(
         <section className='booklist'>    
-            <Books title={title} image={image} author={author} />
-            <Books title={title} image={image} author={author} />
-            <Books title={title} image={image} author={author} />
-            <Books title={title} image={image} author={author} />
-            <Books title={title} image={image} author={author} />
-            <Books title={title} image={image} author={author} />
+            <Books title={firstBook.title} image={firstBook.img} author={firstBook.author} />
+            <Books title={firstBook.title} image={firstBook.img} author={firstBook.author} />
+            <Books title={firstBook.title} image={firstBook.img} author={firstBook.author} />
+            <Books title={firstBook.title} image={firstBook.img} author={firstBook.author} />
+            <Books title={firstBook.title} image={firstBook.img} author={firstBook.author} />
+            <Books title={firstBook.title} image={firstBook.img} author={firstBook.author} />
         </section>
     );
 
