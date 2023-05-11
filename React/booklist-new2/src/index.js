@@ -7,31 +7,32 @@ const title = "Atomic Habits";
 const image = "https://images-eu.ssl-images-amazon.com/images/I/91bYsX41DVL._AC_UL600_SR600,400_.jpg";
 const author = "James Clear";
 
-const Title = () =>{
-    return(
-        <h2>{title}</h2>
-    );
-} 
+//? That was seperate components created for organize.
+// const Title = () =>{
+//     return(
+        
+//     );
+// } 
 
-const Image = () => {
-    return(
-        <img src={image} alt='atomic habit' />
-    );
-}
+// const Image = () => {
+//     return(
+        
+//     );
+// }
 
-const Author = () => { 
-    return(
-        <p>{author}</p>
-    );
-}
+// const Author = () => { 
+//     return(
+        
+//     );
+// }
 
 
-const Books = () => {
+const Books = (props) => {
     return(
         <article className='books'>
-            <Title />
-            <Image />
-            <Author />
+            <h2>{props.title}</h2>
+            <img src={props.image} alt={props.title} />
+            <p>{props.author}</p>
         </article>
     );
 };
@@ -41,12 +42,12 @@ export default function BookList(){
 
     return(
         <section className='booklist'>    
-            <Books />
-            <Books />
-            <Books />
-            <Books />
-            <Books />
-            <Books />
+            <Books title={title} image={image} author={author} />
+            <Books title={title} image={image} author={author} />
+            <Books title={title} image={image} author={author} />
+            <Books title={title} image={image} author={author} />
+            <Books title={title} image={image} author={author} />
+            <Books title={title} image={image} author={author} />
         </section>
     );
 
