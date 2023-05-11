@@ -68,13 +68,16 @@ const sixthBook = {
     author : 'Yuval Noah Harari',
 };
 
-
-const Books = (props) => {
+//! Children prop:
+//? children prop is use when you need to give special element only on component not all components.
+//! keyword is 'children', can't use any other word because it is default build by React.
+const Books = ({ title, image, author, children }) => {
     return(
         <article className='books'>
-            <h2>{props.title}</h2>
-            <img src={props.image} alt={props.title} />
-            <p>{props.author}</p>
+            <h2>{title}</h2>
+            {children}
+            <img src={image} alt={title} />
+            <p>{author}</p>
         </article>
     );
 };
@@ -85,7 +88,11 @@ export default function BookList(){
     return(
         <section className='booklist'>    
             <Books title={firstBook.title} image={firstBook.img} author={firstBook.author} />
-            <Books title={secondBook.title} image={secondBook.img} author={secondBook.author} />
+            <Books title={secondBook.title} image={secondBook.img} author={secondBook.author}>
+                {/*! example of children prop */}
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quia adipisci quisquam cumque voluptate nihil? Repellendus earum eveniet quas in perferendis, animi officia nisi voluptas molestiae expedita ad possimus rerum tempore.</p>
+                <button>Click me</button>
+            </Books>
             <Books title={thirdBook.title} image={thirdBook.img} author={thirdBook.author} />
             <Books title={fourthBook.title} image={fourthBook.img} author={fourthBook.author} />
             <Books title={fifthBook.title} image={fifthBook.img} author={fifthBook.author} />
