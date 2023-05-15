@@ -32,7 +32,9 @@ const Author = () => {
 
 
 //* creating books list
+//* add Id to all books
 const books = [
+
     {
         title : 'Atomic Habits',
         img : firstImg,
@@ -77,32 +79,31 @@ const books = [
 ];
 
 
-const Books = (props) => {
-    //* method 1 : props and get property book
-    const { title, img, author } = props.book
+const Books = ({ title, image, author }) => {
     return(
         <article className='books'>
             <h2>{title}</h2>
-            <img src={img} alt={title} />
+            <img src={image} alt={title} />
             <p>{author}</p>
         </article>
     );
 };
 
-//! if you have 20 properties of book, you can't pass them in individually props but either entire object or use spread operator.
+
+//? To solve key prop error, add id to all books in list
+//* let's use map method in BookList to get books from list
 export default function BookList(){
 
     return(
-        
+        //* We don't need to use Books six times, map mathod will use Books as many books are in list
         <section className='booklist'>    
             {books.map((book) => {
-                const { img, title, author, id } = book;
+                const { img, title, author,id } = book;
                 return (
-                    <Books book={book} key={id} />
+                    <Books title={title} image={img} author={author} key={id} />
                 );
             })}
         </section>
-
     );
 
 };
