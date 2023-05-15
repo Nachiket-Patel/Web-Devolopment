@@ -31,42 +31,45 @@ const Author = () => {
 */
 
 
-//* Adding books object
-const firstBook = {
-    title : 'Atomic Habits',
-    img : firstImg,
-    author : 'James Clear',
-};
+//* creating books list
+const books = [
 
-const secondBook = {
-    title : 'Bhagwat Geeta',
-    img : secondImg,
-    author : 'Ved Vyas',
-};
-
-const thirdBook = {
-    title : 'Ikigai',
+    {
+        title : 'Atomic Habits',
+        img : firstImg,
+        author : 'James Clear',
+    },
+    
+    {
+        title : 'Bhagwat Geeta',
+        img : secondImg,
+        author : 'Ved Vyas',
+    },
+    
+    {
+        title : 'Ikigai',
     img : thirdImg,
     author : 'Francesc Miralles and Hector Garcia',
-};
+    },
 
-const fourthBook = {
-    title : 'Man\'s search of meaning',
-    img : fourthImg,
-    author : 'Viktor Frankl',
-};
+    {
+        title : 'Man\'s search of meaning',
+        img : fourthImg,
+        author : 'Viktor Frankl',
+    },
 
-const fifthBook = {
-    title : 'Rich dad Poor dad',
-    img : fifthImg,
-    author : 'Robert Kiyosaki and Sharon Lechter',
-};
+    {
+        title : 'Rich dad Poor dad',
+        img : fifthImg,
+        author : 'Robert Kiyosaki and Sharon Lechter',
+    },
 
-const sixthBook = {
-    title : 'Sapiens',
-    img : sixthImg,
-    author : 'Yuval Noah Harari',
-};
+    {
+        title : 'Sapiens',
+        img : sixthImg,
+        author : 'Yuval Noah Harari',
+    },
+];
 
 
 const Books = ({ title, image, author }) => {
