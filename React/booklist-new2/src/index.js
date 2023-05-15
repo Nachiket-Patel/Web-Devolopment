@@ -78,8 +78,8 @@ const books = [
 ];
 
 
-const Books = (props) => {
-    const { title, img, author } = props.book;
+const Books = ({book: { title, img, author }}) => {
+    //* method 2: book object and its child properties are pass using destructure in function parameter.
     return(
         <article className='books'>
             <h2>{title}</h2>
@@ -98,7 +98,7 @@ export default function BookList(){
         
         <section className='booklist'>    
             {books.map((book) => {
-                const { img, title, author,id } = book;
+                const { id } = book;
                 return (
                     <Books book={book} key={id} />
                 );
