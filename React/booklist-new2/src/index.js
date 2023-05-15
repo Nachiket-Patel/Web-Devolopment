@@ -78,8 +78,8 @@ const books = [
 ];
 
 
-const Books = ({book: { title, img, author }}) => {
-    //* method 2: book object and its child properties are pass using destructure in function parameter.
+const Books = (props) => {
+    const { title, img, author } = props;
     return(
         <article className='books'>
             <h2>{title}</h2>
@@ -90,17 +90,16 @@ const Books = ({book: { title, img, author }}) => {
 };
 
 
-
 //! if you have 20 properties of book, you can't pass them in individually props but either entire object or use spread operator.
 export default function BookList(){
-
+    //* here we use '...' spead operator.
     return(
         
         <section className='booklist'>    
             {books.map((book) => {
                 const { id } = book;
                 return (
-                    <Books book={book} key={id} />
+                    <Books {...book} key={id} />
                 );
             })}
         </section>
