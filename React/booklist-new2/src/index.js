@@ -71,15 +71,17 @@ const Books = (props) => {
 
 export default function BookList(){
     return(
-        
-        <section className='booklist'>    
-            {books.map((book, index) => {
-                const { id } = book;
-                return (
-                    <Books {...book} key={id} number={index} />
-                );
-            })}
-        </section>
+        <>
+            <h1>Best seller BookList</h1>
+            <section className='booklist'>    
+                {books.map((book, index) => {
+                    const { id } = book;
+                    return (
+                        <Books {...book} key={id} number={index} />
+                    );
+                })}
+            </section>
+        </>
     );
 
 };

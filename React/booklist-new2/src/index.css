@@ -60,3 +60,9 @@ body {
     background-color: #c35600;
     color: #ffffff;
 }
+
+h1 {
+    text-align: center;
+    margin-top: 4rem;
+    text-transform: capitalize;
+}
