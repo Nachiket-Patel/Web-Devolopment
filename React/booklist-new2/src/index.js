@@ -9,28 +9,6 @@ import fifthImg from './images/Rich_dad_poor_dad.jpg';
 import sixthImg from './images/Sapiens.jpg';
 
 
-/*
-* That was seperate components created for organize.
-const Title = () =>{
-    return(
-        
-    );
-} 
-
-const Image = () => {
-    return(
-        
-    );
-}
-
-const Author = () => { 
-    return(
-        
-    );
-}
-*/
-
-
 //* creating books list
 const books = [
 
@@ -79,27 +57,26 @@ const books = [
 
 
 const Books = (props) => {
-    const { title, img, author } = props;
+    const { title, img, author, number } = props;
     return(
         <article className='books'>
             <h2>{title}</h2>
             <img src={img} alt={title} />
             <p>{author}</p>
+            <span className='number'># {number + 1}</span>
         </article>
     );
 };
 
 
-//! if you have 20 properties of book, you can't pass them in individually props but either entire object or use spread operator.
 export default function BookList(){
-    //* here we use '...' spead operator.
     return(
         
         <section className='booklist'>    
-            {books.map((book) => {
+            {books.map((book, index) => {
                 const { id } = book;
                 return (
-                    <Books {...book} key={id} />
+                    <Books {...book} key={id} number={index} />
                 );
             })}
         </section>
