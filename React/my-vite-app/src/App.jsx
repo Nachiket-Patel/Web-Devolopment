@@ -1,15 +1,17 @@
 import './App.css';
-import First from './First_component';
+import CountError from './CountError';
 
 
 function App() {
 
   return (
     <>
-      <h1>This my first vite app</h1>
-      <First />
+      <h1>Count Error</h1>
+      <p>check console count is working but dont render on screen</p>
+      <CountError />
     </>
   )
+  
 }
 
 export default App
