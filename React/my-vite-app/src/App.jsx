@@ -1,15 +1,14 @@
 import './App.css';
-import CountWorks from '../src/components/useState/2-CountWorks';
-
+import UseStateArray from './components/useState/3-useStateArray';
 
 
 function App() {
 
   return (
     <>
-      <h1>useState</h1>
-      <p>check console count is working and render on screen</p>
-      <CountWorks />
+      <h1>use State with array</h1>
+      <p>render array with use of useState hook</p>
+      <UseStateArray />
     </>
   )
   
