@@ -9,11 +9,17 @@ class Car extends React.Component {
   };
 };
 
+function Fruits() {
+  return(
+    <h2>This Fruits is function based component</h2>
+  );
+}
 
 export default function ReactComponents() {
   return(
     <div>
       <Car />
+      <Fruits />
     </div>
   );
 }
