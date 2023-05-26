@@ -15,11 +15,32 @@ function Fruits() {
   );
 }
 
+function InComponent() {
+  return(
+    <>
+      <h2>This is In Component</h2>
+      <h3>We can use component inside another component</h3>
+      <p>This is component in component.</p>
+    </>
+  );
+}
+
+function OutComponent() {
+  return(
+    <React.Fragment>
+      <h2>This is outside component</h2>
+      <p>we can call in component here.</p>
+      <InComponent />
+    </React.Fragment>
+  )
+}
+
 export default function ReactComponents() {
   return(
     <div>
       <Car />
       <Fruits />
+      <OutComponent />
     </div>
   );
 }
