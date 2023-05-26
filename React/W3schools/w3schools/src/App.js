@@ -10,6 +10,12 @@ class Car extends React.Component {
   };
 };
 
+export default function Fruits() {
+  return(
+    <h2>This Fruits</h2>
+  );
+}
+
 
 export default function App() {
     
