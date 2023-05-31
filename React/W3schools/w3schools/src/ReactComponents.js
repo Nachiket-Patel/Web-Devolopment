@@ -38,6 +38,7 @@ function OutComponent() {
 export default function ReactComponents() {
   return(
     <div>
+      <h1>React Components</h1>
       <Car />
       <Fruits />
       <OutComponent />
