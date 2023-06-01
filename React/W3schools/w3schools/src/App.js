@@ -1,6 +1,6 @@
 import React from 'react';
 import './App.css';
-import ReactConditionalRendering from './ReactConditionalRendering';
+import ReactLists from './ReactLists';
 
 
 export default function App() {
@@ -9,7 +9,7 @@ export default function App() {
     <div>
       <h1>Nachiket Patel</h1>
       <p>This is tutorials from W3schools</p><br></br>
-      <ReactConditionalRendering />
+      <ReactLists />
     </div>
   );
   
