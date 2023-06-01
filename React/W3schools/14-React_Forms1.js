@@ -39,6 +39,28 @@ function MyForm() {
 }
 
 
+//* Submitting Forms
+//You can control the submit action by adding an event handler in the onSubmit attribute for the <form>
+//Example: Add a submit button and an event handler in the onSubmit attribute.
+function MyForm() {
+  const [name, setName] = useState("");
+
+  const handleSubmit = (event) => {
+    event.preventDefault();
+    alert(`The name you entered was: ${name}`);
+  }
+
+  return (
+    <form onSubmit={handleSubmit}>
+      <label>Enter your name:
+        <input type="text" value={name} onChange={(e) => setName(e.target.value)} />
+      </label>
+      <input type="submit" />
+    </form>
+  )
+}
+
+
 /*
 * Multiple Input Fields
 You can control the values of more than one input field by adding a name attribute to each element.
@@ -65,20 +87,10 @@ function MyForm() {
   return (
     <form onSubmit={handleSubmit}>
       <label>Enter your name:
-      <input 
-        type="text" 
-        name="username" 
-        value={inputs.username || ""} 
-        onChange={handleChange}
-      />
+      <input type="text" name="username" value={inputs.username || ""} onChange={handleChange} />
       </label>
       <label>Enter your age:
-        <input 
-          type="number" 
-          name="age" 
-          value={inputs.age || ""} 
-          onChange={handleChange}
-        />
+        <input type="number" name="age" value={inputs.age || ""} onChange={handleChange} />
         </label>
         <input type="submit" />
     </form>
