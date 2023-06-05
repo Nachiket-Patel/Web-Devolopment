@@ -1,6 +1,6 @@
 import React from 'react';
 import './App.css';
-import ReactCssStyling from './ReactCssStyling';
+import ReactHooks from './React-Hooks/ReactHooks';
 
 
 export default function App() {
@@ -9,7 +9,7 @@ export default function App() {
     <div>
       <h1>Nachiket Patel</h1>
       <p>This is tutorials from W3schools</p><br/>
-      <ReactCssStyling />
+      <ReactHooks />
     </div>
   );
   
