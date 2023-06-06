@@ -23,10 +23,35 @@ const NeedForObject = () => {
 } 
 
 
+const PersonObject = () => {
+  const [person, setPerson] = useState({
+    name: "James",
+    age: "35",
+    hobby: "SPY",
+  });
+
+  const displayPerson = () => {
+    setPerson({
+      name: "Jason",
+      age: "32",
+      hobby: "ex-SPY",
+    });
+  }
+
+  return(
+    <>
+      <h2>{person.name}</h2>
+      <h3>{person.age}</h3>
+      <h4>Enjoys: {person.hobby}</h4>
+      <button className="btn" onClick={displayPerson}>Show next</button>
+    </>
+  );
+}
+
 export default function UseStateObject() {
   return(
     <>
-      <NeedForObject />
+      <PersonObject />
     </>
   );
 }
