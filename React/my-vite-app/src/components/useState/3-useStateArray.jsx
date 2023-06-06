@@ -23,7 +23,7 @@ const UseStateArray = () => {
           </div>
         );
       })}
-      <button type='button' style={{marginTop: '3rem'}} onClick={() => setPeople([])}>Clear items</button>
+      <button className='btn' type='button' style={{marginTop: '3rem'}} onClick={() => setPeople([])}>Clear items</button>
     </div>
   );
 
