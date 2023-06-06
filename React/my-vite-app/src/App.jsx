@@ -1,5 +1,5 @@
 import './App.css';
-import UseStateArray from './components/useState/3-useStateArray';
+import UseStateObject from './components/useState/4-useStateObject';
 
 
 function App() {
@@ -8,7 +8,7 @@ function App() {
     <>
       <h1>use State with array</h1>
       <p>render array with use of useState hook</p>
-      <UseStateArray />
+      <UseStateObject />
     </>
   )
   
