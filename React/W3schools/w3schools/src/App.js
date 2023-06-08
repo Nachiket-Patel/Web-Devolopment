@@ -1,6 +1,6 @@
 import React from 'react';
 import './App.css';
-import UseEffectHook from './React-Hooks/UseEffectHook';
+import UseContexthook from './React-Hooks/UseContexthook';
 
 
 
@@ -10,7 +10,7 @@ export default function App() {
     <div>
       <h1>Nachiket Patel</h1>
       <p>This is tutorials from W3schools</p><br/>
-      <UseEffectHook />
+      <UseContexthook />
     </div>
   );
   
