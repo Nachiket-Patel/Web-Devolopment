@@ -1,12 +1,12 @@
-import Project2 from './project_2/Project2';
+import Project3 from './project_3/Project3';
 
 
 function App() {
 
   return (
     <>
-      <h1 style={{textAlign: 'center'}}>Project 2</h1>
-      <Project2 />
+      <h1 style={{textAlign: 'center'}}>Project 3</h1>
+      <Project3 />
     </>
   )
 }
