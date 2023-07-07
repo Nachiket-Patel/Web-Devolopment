@@ -11,12 +11,23 @@ function Square({ value, onSquareClick }) {
 
 function App() {
   const [squares, setSquares] = useState(Array(9).fill(null));
+  const [x, setX] = useState(true);
+
 
   function handleClick(i) {
+  
+    if(squares[i]){
+      return;
+    }
+
     const nextSquares = squares.slice();
-    nextSquares[i] = "X";
+
+    x ? nextSquares[i] = "X" : nextSquares[i] = "0";
+    
     setSquares(nextSquares);
+    setX(!x);
   }
+
 
   return (
     <>
